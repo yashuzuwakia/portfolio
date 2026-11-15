@@ -1,0 +1,12 @@
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 32px, 0);
+  filter: blur(6px);
+  transition: opacity 0.9s var(--ease), transform 0.9s var(--ease), filter 0.9s var(--ease);
+}
+
+.visible {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}

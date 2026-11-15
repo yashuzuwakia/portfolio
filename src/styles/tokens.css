@@ -1,0 +1,18 @@
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Space Grotesk', var(--font-sans);
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --container: 1160px;
+  --nav-height: 72px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --accent: #8b5cf6;
+  --accent-2: #22d3ee;
+  --gradient: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  --gradient-strong: linear-gradient(135deg, #7c3aed 0%, #0e7490 100%);
+  --gradient-strong-reverse: linear-gradient(135deg, #0e7490 0%, #7c3aed 100%);
+}
