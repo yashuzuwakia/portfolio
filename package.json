@@ -7,7 +7,7 @@
   "homepage": "https://yashwantchoudhary.in",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yashuzuwakia/Movie-Search.git"
+    "url": "https://github.com/yashuzuwakia/portfolio.git"
   },
   "scripts": {
     "start": "react-scripts start",
