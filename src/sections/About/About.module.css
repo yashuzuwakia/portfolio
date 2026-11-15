@@ -118,3 +118,15 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+.avatar img {
+  position: absolute;
+  inset: 3px;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: calc(var(--radius-lg) - 3px);
+  display: block;
+}

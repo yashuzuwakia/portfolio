@@ -2,6 +2,7 @@ import React from 'react';
 import { about, profile } from 'data';
 import { MailIcon, MapPinIcon, Reveal, SectionHeading } from 'components/ui';
 import styles from './About.module.css';
+import profileImg from './image.png';
 
 export default function About() {
   return (
@@ -12,7 +13,11 @@ export default function About() {
         <div className={styles.grid}>
           <Reveal className={styles.portrait}>
             <div className={styles.avatar}>
-              <span>{profile.initials}</span>
+              {profileImg ? (
+                <img src={profileImg} alt={profile.name || 'Profile'} />
+              ) : (
+                <span>{profile.initials}</span>
+              )}
             </div>
             <ul className={styles.meta}>
               <li>
