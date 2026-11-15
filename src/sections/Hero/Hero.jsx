@@ -66,8 +66,8 @@ export default function Hero() {
 
         <div className={styles.visual} aria-hidden="true">
           <CodeWindow />
-          <div className={`${styles.chip} ${styles.chipOne}`}>React</div>
-          <div className={`${styles.chip} ${styles.chipTwo}`}>UI / UX</div>
+          <div className={`${styles.chip} ${styles.chipOne}`}>Full Stack</div>
+          <div className={`${styles.chip} ${styles.chipTwo}`}>GenAi & LLM</div>
         </div>
       </div>
 
