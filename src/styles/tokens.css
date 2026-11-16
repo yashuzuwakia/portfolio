@@ -1,18 +1,51 @@
+/*
+  Breakpoints (max-width unless noted):
+  360px  small phones
+  480px  phones
+  768px  tablets (portrait)
+  1024px small laptops / tablets (landscape)
+  1440px+ (min-width) large desktops
+*/
 :root {
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-display: 'Space Grotesk', var(--font-sans);
   --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
 
   --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 22px;
+  --radius-md: clamp(10px, 0.6rem + 0.4vw, 14px);
+  --radius-lg: clamp(16px, 0.8rem + 0.8vw, 22px);
   --container: 1160px;
+  --gutter: clamp(1rem, 0.6rem + 2vw, 1.5rem);
   --nav-height: 72px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --space-xs: clamp(0.5rem, 0.45rem + 0.25vw, 0.75rem);
+  --space-sm: clamp(0.75rem, 0.6rem + 0.5vw, 1.25rem);
+  --space-md: clamp(1rem, 0.8rem + 1vw, 1.75rem);
+  --space-lg: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+  --space-xl: clamp(2rem, 1.25rem + 3.5vw, 4rem);
 
   --accent: #8b5cf6;
   --accent-2: #22d3ee;
   --gradient: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
   --gradient-strong: linear-gradient(135deg, #7c3aed 0%, #0e7490 100%);
   --gradient-strong-reverse: linear-gradient(135deg, #0e7490 0%, #7c3aed 100%);
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --container: 1280px;
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --container: 1440px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 64px;
+  }
 }

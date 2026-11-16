@@ -75,3 +75,51 @@
   color: var(--text-muted);
   font-size: 0.95rem;
 }
+
+@media (min-width: 1440px) {
+  .timeline {
+    max-width: 920px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1.5rem 1.4rem;
+  }
+
+  .card h3 {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline {
+    padding-left: 1.75rem;
+  }
+
+  .timeline::before {
+    left: 0.35rem;
+  }
+
+  .dot {
+    top: 1.6rem;
+    left: -1.75rem;
+    width: 14px;
+    height: 14px;
+    box-shadow: 0 0 0 4px var(--glow);
+  }
+
+  .card {
+    padding: 1.25rem 1.1rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (hover: none) {
+  .card:hover {
+    transform: none;
+  }
+}

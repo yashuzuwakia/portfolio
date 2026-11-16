@@ -5,13 +5,13 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+  gap: clamp(1rem, 2vw, 1.25rem);
 }
 
 .card {
   position: relative;
-  padding: 2rem;
+  padding: clamp(1.25rem, 0.8rem + 1.8vw, 2rem);
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
   background: var(--surface);
@@ -44,8 +44,8 @@
 }
 
 .card h3 {
-  font-size: 1.35rem;
-  margin: 0.5rem 0 1.5rem;
+  font-size: clamp(1.15rem, 1.05rem + 0.5vw, 1.35rem);
+  margin: 0.5rem 0 clamp(1rem, 2.5vw, 1.5rem);
 }
 
 .list {

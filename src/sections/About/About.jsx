@@ -8,7 +8,7 @@ export default function About() {
   return (
     <section id="about" className="section">
       <div className="container">
-        <SectionHeading eyebrow="About me" title="Design-minded developer" />
+        <SectionHeading eyebrow="About me" title="Software Developer" />
 
         <div className={styles.grid}>
           <Reveal className={styles.portrait}>

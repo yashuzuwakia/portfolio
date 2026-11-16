@@ -7,8 +7,29 @@
 }
 
 html {
+  font-size: 100%;
   scroll-behavior: smooth;
   scroll-padding-top: var(--nav-height);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 112.5%;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 125%;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 93.75%;
+  }
 }
 
 html.lenis,
@@ -60,6 +81,19 @@ button {
 img,
 svg {
   display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  overflow-wrap: break-word;
 }
 
 ul {

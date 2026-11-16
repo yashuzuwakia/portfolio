@@ -41,3 +41,15 @@
 .links a:hover {
   color: var(--text);
 }
+
+@media (max-width: 768px) {
+  .inner {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .links {
+    justify-content: center;
+  }
+}

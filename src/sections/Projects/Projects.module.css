@@ -44,6 +44,36 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+@media (max-width: 768px) {
+  .filters {
+    border-radius: var(--radius-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    gap: 1rem;
+  }
+
+  .filters {
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border-radius: 999px;
+  }
+
+  .filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter {
+    flex-shrink: 0;
+    padding: 0.45rem 0.9rem;
+    font-size: 0.82rem;
+  }
 }
