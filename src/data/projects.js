@@ -51,7 +51,7 @@ export const projects = [
       'This site: a modular React single-page portfolio with theme switching, scroll-spy navigation, and reveal animations.',
     tags: ['React', 'CSS Modules', 'GitHub Pages'],
     liveUrl: 'https://yashwantchoudhary.in/',
-    repoUrl: 'https://github.com/yashuzuwakia/Movie-Search',
+    repoUrl: 'https://github.com/yashuzuwakia/portfolio',
     featured: false,
   },
 ];

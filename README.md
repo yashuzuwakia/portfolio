@@ -7,6 +7,8 @@ Built with React 18 (Create React App), CSS Modules and [Lenis](https://github.c
 
 ## Getting started
 
+Use Node.js 22.12 or later.
+
 ```bash
 npm install
 npm start        # dev server on http://localhost:3000
@@ -50,4 +52,4 @@ All text, links and projects live in [`src/data`](src/data). Update those files;
 | `experience.js` | Experience and education timeline |
 | `navigation.js` | Navbar sections |
 
-SEO tags (title, description, Open Graph, structured data) are in [`public/index.html`](public/index.html). After changing your name or colours, run `npm run icons` to regenerate the favicon and share image.
+SEO tags (title, description, Open Graph, structured data) are in [`public/index.html`](public/index.html). The production build includes a static version of the profile and project list generated from the same data as the React page. After changing your name or colours, run `npm run icons` to regenerate the favicon and share image.

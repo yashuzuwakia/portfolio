@@ -12,7 +12,7 @@ export const profile = {
   location: 'Pune, India',
   email: 'iamyashwantofficial@gmail.com',
   available: true,
-  resumeUrl: `${process.env.PUBLIC_URL}/Yashwant.pdf`,
+  resumeUrl: `${process.env.PUBLIC_URL || ''}/Yashwant.pdf`,
   socials: {
     github: 'https://github.com/yashuzuwakia',
     linkedin: 'https://www.linkedin.com/in/iam-yash',
