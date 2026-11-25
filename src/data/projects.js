@@ -33,6 +33,17 @@ export const projects = [
     featured: true,
   },
   {
+    id: 'voicenote-studio',
+    title: 'VoiceNote Studio',
+    category: 'Video Editor',
+    description:
+      'Turn voice notes into vertical chat videos. Edit the conversation, record or import audio, trim it, and export a video with synchronized sound.',
+    tags: ['React', 'TypeScript', 'Web Audio API', 'Canvas API'],
+    liveUrl: 'https://yashuzuwakia.github.io/VoiceNote-Studio/',
+    repoUrl: 'https://github.com/yashuzuwakia/VoiceNote-Studio',
+    featured: true,
+  },
+  {
     id: 'portfolio',
     title: 'Developer Portfolio',
     category: 'Website',
